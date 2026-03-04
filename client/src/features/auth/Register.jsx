@@ -49,7 +49,7 @@ const Register = () => {
             <select name="role" onChange={handleChange} className={styles.roleSelect}>
               <option value="CANDIDATE">Candidate / Student</option>
               <option value="HR">HR Professional</option>
-              <option value="ADMIN">System Administrator</option>
+           
             </select>
           </div>
 
