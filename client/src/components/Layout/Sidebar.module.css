@@ -1,0 +1,35 @@
+.sidebar {
+  width: 260px;
+  background-color: var(--bg-card);
+  border-right: 1px solid var(--border-color);
+  height: calc(100vh - 64px);
+  padding: 1.5rem 1rem;
+  position: fixed;
+  left: 0;
+  top: 64px;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.link {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.link:hover {
+  background-color: var(--bg-main);
+  color: var(--primary);
+}
+
+.active {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+}

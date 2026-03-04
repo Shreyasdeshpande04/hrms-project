@@ -1,0 +1,45 @@
+## Job Title: Junior MERN Stack Developer
+
+### Job Description
+
+We are looking for a motivated Junior MERN Stack Developer to join our development team. The candidate will assist in designing, developing, and maintaining full-stack web applications using MongoDB, Express.js, React.js, and Node.js. This role is ideal for freshers or early-career developers who are eager to learn, grow, and work on real-world projects in a collaborative environment.
+
+### Key Responsibilities
+
+* Assist in developing full-stack web applications using the MERN stack
+* Build and integrate RESTful APIs
+* Develop responsive and reusable UI components using React.js
+* Work with MongoDB for data storage and CRUD operations
+* Collaborate with senior developers, designers, and QA teams
+* Debug, test, and fix application issues
+* Follow coding standards and best practices
+* Participate in code reviews and team discussions
+
+### Required Skills
+
+* Basic knowledge of MongoDB, Express.js, React.js, and Node.js
+* Strong understanding of JavaScript (ES6+)
+* HTML5, CSS3, Bootstrap/Tailwind
+* REST API concepts
+* Git & GitHub basics
+* Basic understanding of authentication (JWT / sessions)
+
+### Good to Have
+
+* Exposure to Redux
+* Basic knowledge of deployment
+* Familiarity with Agile/Scrum methodology
+* Internship or academic project experience
+
+### Qualifications
+
+* Bachelor’s degree in Computer Science, IT, or related field (or equivalent experience)
+* Fresher or 0–2 years of experience
+
+### What We Offer
+
+* Learning-oriented work environment
+* Mentorship from experienced developers
+* Career growth opportunities
+* Exposure to real-time projects
+

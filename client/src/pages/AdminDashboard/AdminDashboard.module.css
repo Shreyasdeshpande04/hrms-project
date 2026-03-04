@@ -1,0 +1,56 @@
+.container { padding: 2.5rem; background: #f8fafc; min-height: 100vh; }
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.statCard {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.statCard:hover { transform: translateY(-5px); }
+
+.statCard h3 { font-size: 2.5rem; color: #2563eb; margin: 0; font-weight: 800; }
+.statCard p { font-size: 0.9rem; color: #64748b; text-transform: uppercase; font-weight: 700; margin-top: 10px; }
+
+/* THE CHART GRID 1:1 SPLIT */
+.chartGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 45px;
+}
+
+.chartCard {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chartCard h4 {
+  align-self: flex-start;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #1e293b;
+  font-weight: 700;
+  border-left: 4px solid #2563eb;
+  padding-left: 15px;
+}
+
+@media (max-width: 1024px) {
+  .chartGrid { grid-template-columns: 1fr; }
+}

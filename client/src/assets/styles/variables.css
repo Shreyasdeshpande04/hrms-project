@@ -1,0 +1,33 @@
+:root {
+  /* Core Colors - Enterprise Blue & Slate */
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --secondary: #64748b;
+  
+  /* Status Colors - Sophisticated Tones */
+  --bg-hired: #ecfdf5;
+  --text-hired: #059669;
+  --bg-interview: #eff6ff;
+  --text-interview: #2563eb;
+  --bg-screening: #fff7ed;
+  --text-screening: #ea580c;
+  --bg-applied: #f8fafc;
+  --text-applied: #475569;
+  --danger: #ef4444;
+
+  /* Neutrals */
+  --bg-main: #f1f5f9;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-light: #e2e8f0;
+
+  /* Professional Depth */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}

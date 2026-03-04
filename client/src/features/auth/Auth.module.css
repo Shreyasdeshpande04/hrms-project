@@ -1,0 +1,79 @@
+.authPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 85px); /* Centers between navbar and bottom */
+  background-color: #f8fafc;
+  width: 100%;
+  padding: 20px;
+}
+.roleSelect {
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    background-color: #ffffff;
+    font-size: 1rem;
+    color: #1e293b;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.2s;
+}
+
+.roleSelect:focus {
+    border-color: #2563eb;
+}
+.authCard {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #e2e8f0;
+  animation: fadeIn 0.4s ease-out;
+}
+
+.authTitle {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.authSub {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 30px;
+  font-size: 0.95rem;
+}
+
+.authFooter {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.authFooter a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.errorBox {
+  background: #fef2f2;
+  color: #dc2626;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+  border: 1px solid #fecaca;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
