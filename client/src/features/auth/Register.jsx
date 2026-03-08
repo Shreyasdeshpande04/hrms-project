@@ -50,6 +50,7 @@ const Register = () => {
               <option value="CANDIDATE">Candidate / Student</option>
               <option value="HR">HR Professional</option>
              
+           
             </select>
           </div>
 
