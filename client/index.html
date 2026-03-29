@@ -2,13 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-<link rel="icon" href="data:,">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 🔥 FIX favicon warning -->
+    <link rel="icon" href="data:," />
+
+    <!-- 🔥 VERY IMPORTANT FOR RESPONSIVENESS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- 🔥 Improve mobile rendering -->
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="HR Management System" />
+
     <title>Modern HR Management System</title>
   </head>
+
   <body>
+    <!-- 🔥 ROOT CONTAINER -->
     <div id="root"></div>
-    <!-- This line tells Vite where your React code starts -->
+
+    <!-- 🔥 React Entry -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

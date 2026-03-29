@@ -120,3 +120,35 @@
     .footerBrandBlock { text-align: center; }
     .footerContactBlock { align-items: center; }
 }
+/* 🔥 FIX OVERFLOW */
+.pageContainer {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* 🔥 GRID FIX */
+.valueGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* 🔥 MOBILE FIX */
+@media (max-width: 768px) {
+  .valueGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 🔥 CHART FIX */
+.chartWrapper {
+  width: 100%;
+  height: 300px;
+}
+
+/* Mobile chart */
+@media (max-width: 600px) {
+  .chartWrapper {
+    height: 200px;
+  }
+}

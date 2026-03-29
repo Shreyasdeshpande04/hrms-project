@@ -1,19 +1,41 @@
 @import './variables.css';
 @import './typography.css';
 
-* {
+/* =========================
+   🔥 RESET
+========================= */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* =========================
+   🔥 BASE
+========================= */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: var(--bg-main);
   color: var(--text-main);
+  font-family: var(--font-family, Arial, sans-serif);
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* =========================
+   🔥 ELEMENTS
+========================= */
 a {
   text-decoration: none;
   color: inherit;
@@ -23,25 +45,195 @@ ul {
   list-style: none;
 }
 
+img, video, canvas, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 button {
   cursor: pointer;
   border: none;
-  outline: none;
   background: none;
 }
 
-input:focus {
+input, textarea, select {
+  width: 100%;
+  max-width: 100%;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
   outline: none;
 }
 
-/* Scrollbar styling */
+/* Table fix */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  display: block;
+  overflow-x: auto;
+}
+
+/* =========================
+   🔥 LAYOUT SYSTEM
+========================= */
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Flex */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* =========================
+   🔥 CARD SYSTEM
+========================= */
+.cards,
+.dashboard-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card,
+.recruiter-card,
+.candidate-card {
+  flex: 1 1 calc(33.33% - 16px);
+  min-width: 250px;
+  background: var(--bg-card, #ffffff);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* =========================
+   🔥 NAVBAR
+========================= */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================
+   🔥 CHART SYSTEM
+========================= */
+.chart-card {
+  width: 100%;
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 16px;
+}
+
+.chart-title {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.chart-box {
+  width: 100%;
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* =========================
+   🔥 SCROLLBAR
+========================= */
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-main);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--border-color);
   border-radius: var(--radius-md);
+}
+
+/* =========================
+   📱 RESPONSIVE
+========================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .card,
+  .recruiter-card,
+  .candidate-card {
+    flex: 1 1 calc(50% - 16px);
+  }
+
+  .container {
+    padding: 12px;
+  }
+
+  .chart-box {
+    height: 220px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .card,
+  .recruiter-card,
+  .candidate-card {
+    flex: 1 1 100%;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .chart-box {
+    height: 180px;
+  }
+
+  h1 { font-size: 20px; }
+  h2 { font-size: 18px; }
+  p  { font-size: 14px; }
+}
+
+/* Extra small */
+@media (max-width: 400px) {
+  .chart-box {
+    height: 150px;
+  }
+
+  h1 { font-size: 18px; }
+  h2 { font-size: 16px; }
+  p  { font-size: 13px; }
 }
