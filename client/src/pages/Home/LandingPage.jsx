@@ -27,7 +27,7 @@ const LandingPage = () => {
           <span className={styles.badge}>Next-Gen HRMS v2.0</span>
           <h1>Bridge the Gap Between <br/> <span className={styles.blue}>Ambition</span> and <span className={styles.blue}>Opportunity</span></h1>
           <p className={styles.introSub}>
-            ModernHR is a specialized Enterprise Resource Planning (ERP) system designed 
+            ModernHR is a specialized  system designed 
             to automate the complex lifecycle of recruitment. We provide a transparent path 
             for students and high-tech tools for HR professionals.
           </p>
